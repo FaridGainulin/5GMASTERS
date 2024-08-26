@@ -1,0 +1,40 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      img.main-section__logo-icon(src="images/logo-icon.png" loading="lazy" width="682" height="96" alt="icon")
+      h1.main-section__title.font-w-regular.font-s-38
+        span.color-grey-a6 Поможем вам 
+        | открыть свой 
+        br.no-br
+        | сервисный центр 
+        span.color-grey-a6 по ремонту 
+        br.no-br
+        span.color-grey-a6 мобильных телефонов
+      .main-section__sub-title
+        .main-section__sub-title-line
+        .font-s-20
+          span.font-w-bold Начните зарабатывать от 1,67 млн ₽ в год 
+          br.no-br
+          | на услугах, обеспеченных высоким спросом
+      .main-section__bottom
+        .main-section__bottom-left
+          .font-s-16.text-center Получите подробный <br> план открытия
+          form.main-section__form(data-feedback-form)
+            input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn.main-item(type="submit") ПОЛУЧИТЬ ПЛАН
+        .main-section__bottom-right
+          .swiper-main
+            .main-section__bottom-right-cards.swiper-wrapper
+              .main-section__bottom-right-card.swiper-slide
+                img.main-section__bottom-icon(src="images/main-section-bottom-icon-1.png" loading="lazy" width="42" height="42" alt="icon")
+                .font-s-16 Большая <br> маржинальность
+              .main-section__bottom-right-card.swiper-slide
+                img.main-section__bottom-icon(src="images/main-section-bottom-icon-2.png" loading="lazy" width="42" height="42" alt="icon")
+                .font-s-16 Поддержка <br> на всех этапах
+              .main-section__bottom-right-card.swiper-slide
+                img.main-section__bottom-icon(src="images/main-section-bottom-icon-3.png" loading="lazy" width="42" height="42" alt="icon")
+                .font-s-16 Стабильная <br> прибыль
+            .main-pagination.swiper-progress-main
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1772" height="1530" alt="image")

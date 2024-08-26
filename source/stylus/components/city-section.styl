@@ -1,0 +1,99 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #fff
+  +above($breakpoints.sm)
+    background-image: url('../images/city-section-bg-desc.jpg')
+
+  &__container
+    position relative
+    text-align: center
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      text-align: start
+      padding 70px 0 90px 0
+    +above($breakpoints.md)
+      padding 120px 0 150px 0
+    +above($breakpoints.xxl)
+      padding 188px 0 241px 0
+
+  &__box
+    +above($breakpoints.sm)
+      margin-left 425px
+    +above($breakpoints.md)
+      margin-left 390px
+    +above($breakpoints.xxl)
+      margin-left 502px
+
+  &__logo
+    width 150px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      margin 0
+      width 200px
+    +above($breakpoints.md)
+      width 250px
+    +above($breakpoints.xxl)
+      width 341px
+
+  &__title
+    padding 14px 0 20px 0
+    +above($breakpoints.sm)
+      padding 14px 0 25px 0
+    +above($breakpoints.md)
+      padding 14px 0 30px 0
+    +above($breakpoints.xxl)
+      padding 14px 0 34px 0
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      align-items: flex-start
+    +above($breakpoints.md)
+      flex-direction: row
+      align-items: flex-end
+      gap: 26px
+
+  &__block
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 19px
+
+  &__line
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      width 3px
+      height: 60px
+      border-radius: 5px
+      background-color #fff
+    +above($breakpoints.md)
+      width 5px
+      height: 88px
+
+  &__form
+    width 300px
+    padding 20px 20px 20px 20px
+    backdrop-filter: blur(10px);
+    background: #323031;
+    border-radius: 13px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.xxl)
+      padding 27px 21px 24px 22px
+
+  &__img
+    width 300px
+    height: auto
+    margin 0 auto
+    +above($breakpoints.sm)
+      display: none

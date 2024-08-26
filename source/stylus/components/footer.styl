@@ -1,0 +1,89 @@
+.footer
+  // background-image: url('../images/footer-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #2C2C2C
+
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      justify-content space-between
+      flex-direction: row
+      padding 25px 0 28px 0
+    +above($breakpoints.md)
+      padding 30px 0 38px 0
+    +above($breakpoints.xxl)
+      padding 43px 0 48px 0
+
+  &__logo
+    width 90px
+    height: auto
+    +above($breakpoints.sm)
+      width 100px
+    +above($breakpoints.md)
+      width 140px
+    +above($breakpoints.xxl)
+      width 185px
+
+  &__brand
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 6px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 36px
+
+  &__brand-name
+    color: #C0C0C0
+
+  &__brand-name-text
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__privacy
+    cursor pointer
+    text-decoration: underline
+
+  &__connection
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      gap: 20px
+    +above($breakpoints.md)
+      gap: 30px
+
+  &__connection-icon
+    width 28px
+    height: 26px
+    +above($breakpoints.md)
+      width 36px
+      height: 37px
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      justify-content center
+      width 160px
+      height: 36px
+      color: #000
+      background-color #fff
+      border-radius: 6px
+      text-transform: uppercase
+      cursor pointer
+    +above($breakpoints.md)
+      border-radius: 12px
+      width 223px
+      height: 59px
